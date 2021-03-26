@@ -1,0 +1,466 @@
+@font-face {
+  font-family: firstFont;
+  src: url(../fonts/92zPtBhPNqw79Ij1E865zBUv7myRJTVBNI4un_HKCEk.woff);
+}
+@font-face {
+  font-family: secondFont;
+  src: url(../fonts/92zPtBhPNqw79Ij1E865zBUv7mz9JTVBNI4un_HKCEk.woff);
+}
+@font-face {
+  font-family: thirdFont;
+  src: url(../fonts/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRkBI95WamXgElL.woff);
+}
+@font-face {
+  font-family: fourthFont;
+  src: url(../fonts/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI95WamXgElL.woff);
+}
+a {
+  text-decoration: none !important;
+}
+li {
+  list-style-type: none;
+}
+@import "config";
+//Header section
+header {
+  font-family: firstFont;
+  transition: background-color 0.2s;
+  min-width: 100%;
+  z-index: 1030;
+  div {
+    nav {
+      a {
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  #navbarNavDropdown {
+    ul {
+      li {
+        a {
+          color: $crnaboja;
+          margin: 0px 12px;
+          transition: color 0.2s;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  #social {
+    a {
+      color: $crnaboja;
+      font-size: 16px;
+      transition: color 0.2s;
+    }
+  }
+}
+
+//Section one
+#sectionOne {
+  background-image: url(../img/nokticover.png);
+  background-position: center center;
+  background-size: cover;
+  min-height: 750px;
+  padding-top: 136px;
+  .row {
+    .kvout {
+      font-family: thirdFont;
+      width: 70%;
+    }
+    .holddvadugmeta {
+      width: 80%;
+      .dvadugmeta:first-child,
+      .dvadugmeta {
+        a {
+          padding: 10px 20px;
+          font-family: firstFont;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+      .dvadugmeta:last-child {
+        a {
+          background-color: transparent;
+          color: $belaboja;
+          transition: background-color 0.2s;
+          &:hover {
+            background-color: $belaboja;
+            color: $crnaboja;
+          }
+        }
+      }
+    }
+    .card-deck {
+      .card {
+        .card-body {
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+//Druga sekcija
+#sectionTwo {
+  h1 {
+    font-family: fourthFont;
+  }
+  figure {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    figcaption {
+      font-family: secondFont;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+  }
+  ul {
+    width: 80%;
+  }
+  .viseouslogamabtn {
+    a {
+      @include dugme;
+      background-color: $crnaboja;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: lighten($color: #000000, $amount: 20);
+      }
+    }
+  }
+}
+
+//Treca sekcija
+#sectionThree,
+#sectionFour {
+  background-color: $bebiroze;
+  .stkutija {
+    max-width: 100% !important;
+    padding: 100px 20px;
+    .row {
+      display: flex;
+      justify-content: center;
+      div:first-child {
+        .stslajder {
+          width: 90%;
+          margin: 0 auto;
+          #slslika,
+          #slslika2,
+          #slslika3 {
+            background-image: url(../img/nokti.jpg);
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+          #slslika2 {
+            background-image: url(../img/obrve.jpg);
+          }
+          #slslika3 {
+            background-image: url(../img/depilacija.jpg);
+          }
+        }
+      }
+    }
+    .tbk {
+      width: 50%;
+      h1 {
+        font-family: fourthFont;
+        font-weight: 500;
+      }
+      p {
+        font-family: thirdFont;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 1.7em;
+        text-align: left;
+        text-transform: none;
+      }
+      .viseouslogamabtn {
+        @include dugme;
+        &:hover {
+          background-color: $crnaboja;
+          color: $belaboja !important;
+        }
+      }
+    }
+  }
+}
+
+//Podsekcija
+#podSekcija {
+  .container {
+    .row {
+      div {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        h1 {
+          font-size: 22px;
+          font-family: firstFont;
+        }
+        h2 {
+          font-family: secondFont;
+          font-size: 16px;
+        }
+        form {
+          width: 100%;
+          textarea {
+            width: 40%;
+            height: 50px;
+            font-family: secondFont;
+          }
+          button {
+            @include dugme;
+            color: $crnaboja;
+            padding: 14px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+//Kupon sekcija
+#sectionFour {
+  .tbk {
+    order: 1;
+  }
+  .modal-title {
+    font-family: firstFont;
+  }
+  .col-form-label {
+    font-family: fourthFont;
+  }
+  .btn {
+    @include dugme;
+    background-color: $crnaboja;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: lighten($color: #000000, $amount: 20);
+    }
+  }
+  .kuponslika {
+    order: 2;
+    height: 100%;
+    width: 70%;
+  }
+}
+//Footer
+footer {
+  background-color: lighten($bebiroze, 1);
+  #orderPrvi {
+    order: 1;
+    #divPrvi {
+      img {
+        width: 200px;
+      }
+    }
+  }
+  #orderDrugi {
+    order: 2;
+    #divDrugi {
+      ul {
+        li {
+          a {
+            @include fontSett;
+          }
+        }
+      }
+    }
+  }
+  #orderTreci {
+    order: 3;
+    #divTreci {
+      @include fontSett;
+      h1 {
+        font-size: 20px;
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+//Usluge
+//Prva sekcija
+#sectionOneUsluge,
+.kvoutSekcija {
+  background-color: $bebiroze;
+  min-height: 500px;
+  padding-top: 136px;
+  margin: 0px !important;
+  padding: 0px !important;
+  .row {
+    .kvout {
+      font-family: fourthFont;
+    }
+    #sjh2 {
+      max-width: 50%;
+      h2 {
+        font-family: fourthFont;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.7em;
+      }
+    }
+  }
+}
+//Druga sekcija
+.univerzalnaSekcija {
+  padding-top: 100px;
+  .container {
+    p {
+      font-family: secondFont;
+    }
+    .unSekNaslov {
+      h1 {
+        font-family: thirdFont;
+        font-weight: 500;
+        line-height: 55px;
+      }
+    }
+    .opis {
+      max-width: 50%;
+    }
+    .unaslov {
+      font-family: firstFont;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#pedikirs {
+  background-color: $bebiroze;
+}
+
+#parafin {
+  .opis {
+    max-width: 60%;
+  }
+}
+
+#mtvc,
+#depilacija {
+  background-color: $bebiroze;
+}
+
+//Kontakt stranica
+//Sekcija tml
+.tml {
+  .card-deck {
+    margin: 0 auto;
+  }
+  img {
+    max-width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+}
+
+#mapaisalon {
+  ///////////////////////////ZNAM DA NE SME ALI NZM KAKO DRUGACIJE
+  .col-lg-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  iframe {
+    padding: 0px !important;
+  }
+  .salslika {
+    @include sirinaivisinamape;
+    background-image: url(../img/salonslika.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .mapa {
+    @include sirinaivisinamape;
+  }
+}
+
+#forma {
+  form {
+    width: 60%;
+  }
+  input,
+  textarea {
+    font-family: secondFont;
+    border-radius: 0px;
+    margin: 15px 0px;
+    border: 1px solid $crnaboja;
+    color: $crnaboja;
+    height: 50px;
+  }
+  textarea {
+    height: 100px;
+  }
+  .iwidth {
+    width: 96%;
+  }
+  .btn {
+    @include dugme;
+    background-color: $crnaboja;
+    width: 200px;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: lighten($color: #000000, $amount: 20);
+    }
+  }
+}
+
+//Autor
+.naslovnaSekcija {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: $bebiroze;
+  h1 {
+    font-family: thirdFont;
+    font-size: 60px;
+  }
+  p {
+    font-family: secondFont;
+    font-size: 18px;
+    width: 50%;
+  }
+}
+//Druga sekcija o autoru
+#oAutoru {
+  #oAutoruSlika {
+    background-image: url(../img/resume-david.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: top center;
+  }
+  #oAutoruEmailtxt {
+    font-family: secondFont;
+    background-color: $bebiroze;
+    width: 300px;
+  }
+  #oAutoruOpistxt {
+    h1,
+    h2 {
+      font-family: thirdFont;
+    }
+    p {
+      font-family: fourthFont;
+      font-size: 18px;
+    }
+    a {
+      font-family: secondFont;
+      font-weight: 800;
+    }
+  }
+}
+@import "responsive";

@@ -1,0 +1,302 @@
+@media (max-width: 1500px) {
+  //Treca sekcija
+  #sectionThree,
+  #sectionFour {
+    .stkutija {
+      .tbk {
+        width: 90%;
+      }
+    }
+  }
+}
+//--------------------------------------------992px
+@media (max-width: 992px) {
+  header {
+    #social {
+      display: none;
+    }
+  }
+  //Sekcija tri
+  #sectionThree,
+  #sectionFour {
+    .stkutija {
+      .row {
+        div {
+          .tbk {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  //Podsekcija
+  #podSekcija {
+    .container {
+      .row {
+        div {
+          form {
+            textarea {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #sectionFour {
+    #textKupon {
+      order: 2;
+    }
+    #slikaKupon {
+      order: 1;
+      margin-bottom: 15px;
+    }
+  }
+  //Footer
+  footer {
+    background-color: $bebiroze;
+    #orderPrvi {
+      order: 3;
+      #divPrvi {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    #orderDrugi {
+      order: 1;
+      #divDrugi {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+    #orderTreci {
+      order: 2;
+      #divTreci {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+  }
+  //Usluge
+  #sectionOneUsluge {
+    .row {
+      #sjh2 {
+        max-width: 70%;
+      }
+    }
+  }
+  //Manikir sekcija
+  .univerzalnaSekcija {
+    .container-fluid {
+      .row {
+        .centar {
+          width: 100%;
+          max-width: 576px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  //Kontakt
+  #mapaisalon {
+    .salslika {
+      min-height: 70vh !important;
+    }
+    .mapa {
+      min-height: 70vh !important;
+    }
+  }
+
+  //Autor{
+  //Autor
+  #oAutoru {
+    #oAutoruSlika {
+      width: 100%;
+    }
+    #oAutoruEmailtxt {
+      width: 100%;
+    }
+  }
+}
+//--------------------------------------------768px
+@media (max-width: 768px) {
+  #sectionOne {
+    .row {
+      .kvout {
+        font-size: 36px !important;
+      }
+    }
+  }
+  //Druga sekcija
+  #sectionTwo {
+    ul {
+      flex-direction: column;
+    }
+  }
+  //Podsekcija
+  #podSekcija {
+    .container {
+      .row {
+        div {
+          form {
+            textarea {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sectionFour {
+    .kuponslika {
+      height: 90%;
+      width: 90%;
+    }
+  }
+  //Usluge
+  #sectionOneUsluge {
+    .row {
+      h1 {
+        font-size: 40px;
+      }
+      #sjh2 {
+        max-width: 80%;
+      }
+    }
+  }
+  .univerzalnaSekcija {
+    .container-fluid {
+      .row {
+        div {
+          .opis {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  //Kontakt
+  //Kontakt
+  #forma {
+    form {
+      width: 80% !important;
+    }
+    textarea {
+      margin-left: 5px;
+    }
+  }
+
+  //Autor
+  #oAutoru {
+    #oAutoruOpistxt {
+      h1,
+      h2 {
+        font-family: thirdFont;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-family: fourthFont;
+        font-size: 16px;
+      }
+    }
+  }
+}
+//--------------------------------------------------575px
+@media (max-width: 575px) {
+  //Kontakt
+  #forma {
+    form {
+      width: 90% !important;
+    }
+    input {
+      margin: 5px 5px;
+    }
+    .iwidth {
+      width: 100% !important;
+      margin-right: 0px !important;
+    }
+  }
+}
+//--------------------------------------------------468px
+@media (max-width: 468px) {
+  //Sekcija jedan
+  #sectionOne {
+    .row {
+      .holddvadugmeta {
+        width: 100%;
+      }
+    }
+  }
+  //Sekcija tri
+  #sectionThree,
+  #sectionFour {
+    .stkutija {
+      .row {
+        div {
+          .tbk {
+            .viseouslogamabtn {
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  #sectionFour {
+    .kuponslika {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  //Footer
+  footer {
+    background-color: $bebiroze;
+    #orderTreci {
+      #divTreci {
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  //Usluge
+  #sectionOneUsluge {
+    .row {
+      #sjh2 {
+        max-width: 90%;
+      }
+    }
+  }
+  .univerzalnaSekcija {
+    .container-fluid {
+      .row {
+        div {
+          .opis {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  //Usluge
+  #sectionOneUsluge {
+    .row {
+      #sjh2 {
+        max-width: 100%;
+      }
+    }
+  }
+}
