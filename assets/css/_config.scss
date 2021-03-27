@@ -13,12 +13,14 @@ $bebiroze: #fbf4f1;
   color: $belaboja;
   border-radius: 0px;
 }
+
 @mixin fontSett {
   font-family: firstFont;
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 20px;
 }
+
 @mixin sirinaivisinamape {
   min-height: 100vh !important;
   min-width: 100%;
@@ -32,6 +34,7 @@ $bebiroze: #fbf4f1;
     @return #fff;
   }
 }
+
 //Postavlja pozadinsku i boju teksta
 @mixin set-background($color) {
   background-color: $color;

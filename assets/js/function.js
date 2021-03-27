@@ -13,7 +13,7 @@ function scroll() {
     el.style.backgroundColor = "transparent";
     el.style.borderBottom = "0px";
     for (let i = 0; i < cl.length; i++) {
-      cl[i].style.color = "#fff";
+      cl[i].style.color = "#000";
     }
   }
 }
@@ -41,7 +41,7 @@ function out() {
   if (window.pageYOffset < 50) {
     el.style.backgroundColor = "transparent";
     for (let i = 0; i < cl.length; i++) {
-      cl[i].style.color = "#fff";
+      cl[i].style.color = "#000";
     }
   }
 }
