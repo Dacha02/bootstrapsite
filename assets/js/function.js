@@ -10,7 +10,7 @@ function scroll() {
     }
   }
   if (window.pageYOffset < 50) {
-    el.style.backgroundColor = "transparent";
+    el.style.backgroundColor = "rgba(251, 244, 241, 0.3)";
     el.style.borderBottom = "0px";
     for (let i = 0; i < cl.length; i++) {
       cl[i].style.color = "#000";
@@ -39,7 +39,7 @@ function out() {
     scroll();
   }
   if (window.pageYOffset < 50) {
-    el.style.backgroundColor = "transparent";
+    el.style.backgroundColor = "rgba(251, 244, 241, 0.3)";
     for (let i = 0; i < cl.length; i++) {
       cl[i].style.color = "#000";
     }

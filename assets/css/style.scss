@@ -30,9 +30,12 @@ li {
 //Header section
 header {
   font-family: firstFont;
+  background-color: rgba(251, 244, 241, 0.3);
+
   min-width: 100%;
   transition: background-color 0.2s;
   z-index: 1030;
+
   div {
     nav {
       a {
@@ -74,49 +77,53 @@ header {
   min-height: 750px;
   padding-top: 136px;
 
-  .row {
-    .kvout {
-      font-family: thirdFont;
-      width: 70%;
-    }
+  .kvout {
+    font-family: thirdFont;
+    width: 70%;
+  }
 
-    .holddvadugmeta {
-      max-width: 80%;
-      .dvadugmeta:first-child,
-      .dvadugmeta {
-        min-width: 200px;
-        padding: 10px 0px;
-        a {
-          font-family: firstFont;
-          font-size: 14px;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          font-weight: 500;
-          line-height: 20px;
-        }
-      }
+  .holddvadugmeta {
+    width: 100%;
 
-      .dvadugmeta:last-child {
-        background-color: transparent;
-        transition: background-color 0.2s;
-        a {
-          color: $belaboja;
-          transition: color 0.2s;
-        }
-        &:hover {
-          background-color: $belaboja;
-          a {
-            color: $crnaboja;
-          }
-        }
+    .dvadugmeta:first-child,
+    .dvadugmeta {
+      min-width: 200px;
+      padding: 10px 0px;
+      margin-right: 25px;
+
+      a {
+        font-family: firstFont;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        line-height: 20px;
       }
     }
 
-    .card-deck {
-      .card {
-        .card-body {
-          padding: 1px;
+    .dvadugmeta:last-child {
+      background-color: transparent;
+      transition: background-color 0.2s;
+
+      a {
+        color: $belaboja;
+        transition: color 0.2s;
+      }
+
+      &:hover {
+        background-color: $belaboja;
+
+        a {
+          color: $crnaboja;
         }
+      }
+    }
+  }
+
+  .card-deck {
+    .card {
+      .card-body {
+        padding: 1px;
       }
     }
   }
@@ -502,6 +509,7 @@ footer {
 
   p {
     font-family: secondFont;
+
     font-size: 18px;
     width: 50%;
   }

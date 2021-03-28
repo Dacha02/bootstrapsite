@@ -118,7 +118,6 @@
     }
   }
 
-  //Autor{
   //Autor
   #oAutoru {
     #oAutoruSlika {
@@ -129,23 +128,36 @@
       width: 100%;
     }
   }
+
+  .naslovnaSekcija {
+    p {
+      width: 80% !important;
+    }
+  }
 }
 
 //--------------------------------------------768px
 @media (max-width: 768px) {
   #sectionOne {
-    .row {
-      .kvout {
-        font-size: 36px !important;
+    .kvout {
+      font-size: 36px !important;
+    }
+
+    .holddvadugmeta {
+      flex-direction: column;
+      .dvadugmeta:first-child {
+        margin-right: 25px;
       }
     }
   }
+
   //Druga sekcija
   #sectionTwo {
     ul {
       flex-direction: column;
     }
   }
+
   //Podsekcija
   #podSekcija {
     .container {
@@ -167,6 +179,7 @@
       width: 90%;
     }
   }
+
   //Usluge
   #sectionOneUsluge {
     .row {
@@ -179,6 +192,7 @@
       }
     }
   }
+
   .univerzalnaSekcija {
     .container-fluid {
       .row {
@@ -225,6 +239,14 @@
       }
     }
   }
+
+  .univerzalnaSekcija {
+    .container {
+      .opis {
+        max-width: 80%;
+      }
+    }
+  }
 }
 
 //--------------------------------------------------575px
@@ -242,6 +264,20 @@
     .iwidth {
       width: 100% !important;
       margin-right: 0px !important;
+    }
+  }
+
+  .naslovnaSekcija {
+    p {
+      width: 100% !important;
+    }
+  }
+
+  .univerzalnaSekcija {
+    .container {
+      .opis {
+        max-width: 100%;
+      }
     }
   }
 }
