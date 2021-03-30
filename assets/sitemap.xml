@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://dacha02.github.io/bootstrapsite/</loc>
+        <lastmod>2021-30-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://dacha02.github.io/bootstrapsite/assets/pages/usluge.html</loc>
+        <lastmod>2021-30-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://dacha02.github.io/bootstrapsite/assets/pages/contact.html</loc>
+        <lastmod>2021-30-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://dacha02.github.io/bootstrapsite/assets/pages/autor.html</loc>
+        <lastmod>2021-30-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
